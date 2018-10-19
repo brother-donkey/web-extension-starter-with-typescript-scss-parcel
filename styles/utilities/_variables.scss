@@ -1,0 +1,121 @@
+
+$body-background: #fff;
+
+$border: #e0e0e0;
+
+$success-background: #008863;
+$success-hover-background: #47a78d;
+
+/* Text */
+$text: black;
+
+$text-subtle: #333;
+$text-orange: #cb4600;
+$text-darkOrange: #d83b01;
+$text-teal: #009ba5;
+
+$night-text: #ccc;
+$night-text-subtle: #828282;
+$night-blue: #00a4f3;
+$night-body-background: #1a1a1a;
+$night-border: #333;
+
+$text-success: #fff;
+
+$uhf-grey: #2F2F2F;
+
+// Accent shades
+$accent: #0050c5;
+
+$accent-lt-1: lighten($accent, 10%);
+$accent-lt-2: lighten($accent, 30%);
+$accent-lt-3: lighten($accent, 50%);
+$accent-lt-4: lighten($accent, 57%);
+
+$accent-dk-1: darken($accent, 5%);
+$accent-dk-2: darken($accent, 10%);
+$accent-dk-3: darken($accent, 20%);
+$accent-dk-4: darken($accent, 30%);
+
+// Neutral shades
+$neutral: #56616f;
+
+$neutral-lt-1: lighten($neutral, 10%);
+$neutral-lt-2: lighten($neutral, 26%);
+$neutral-lt-3: lighten($neutral, 49%);
+$neutral-lt-4: lighten($neutral, 57%);
+$neutral-lt-5: lighten($neutral, 59%);
+
+$neutral-dk-1: darken($neutral, 5%);
+$neutral-dk-2: darken($neutral, 10%);
+$neutral-dk-3: darken($neutral, 20%);
+$neutral-dk-4: darken($neutral, 30%);
+
+// Highlight shades
+$highlight: #673ab7;
+
+$highlight-lt-1: lighten($highlight, 10%);
+$highlight-lt-2: lighten($highlight, 26%);
+$highlight-lt-3: lighten($highlight, 40%);
+$highlight-lt-4: lighten($highlight, 47%);
+
+$highlight-dk-1: darken($highlight, 5%);
+$highlight-dk-2: darken($highlight, 10%);
+$highlight-dk-3: darken($highlight, 23%);
+$highlight-dk-4: darken($highlight, 35%);
+
+// Success shades
+$success: #008863;
+
+$success-lt-1: desaturate(lighten($success, 20%), 60%);
+$success-lt-2: desaturate(lighten($success, 40%), 60%);
+$success-lt-3: desaturate(lighten($success, 60%), 60%);
+$success-lt-4: desaturate(lighten($success, 68%), 40%);
+
+$success-dk-1: darken($success, 3%);
+$success-dk-2: darken($success, 7%);
+$success-dk-3: darken($success, 12%);
+$success-dk-4: darken($success, 17%);
+
+// info shades
+$info: #00bcf2;
+
+$info-lt-1: lighten($info, 10%);
+$info-lt-2: lighten($info, 26%);
+$info-lt-3: lighten($info, 40%);
+$info-lt-4: lighten($info, 45%);
+
+$info-dk-1: darken($info, 5%);
+$info-dk-2: darken($info, 10%);
+$info-dk-3: darken($info, 20%);
+$info-dk-4: darken($info, 30%);
+
+
+// Caution shades
+$caution: #E85B3F;
+
+$caution-lt-1: lighten($caution, 12%); 
+$caution-lt-2: lighten($caution, 26%);
+$caution-lt-3: lighten($caution, 35%);
+$caution-lt-4: lighten($caution, 38%);
+
+$caution-dk-1: darken($caution, 5%);
+$caution-dk-2: darken($caution, 10%);
+$caution-dk-3: darken($caution, 20%);
+$caution-dk-4: darken($caution, 30%);
+
+// Warning shades
+$warning: #94141a;
+
+$warning-lt-1: desaturate(lighten($warning, 10%), 10%);
+$warning-lt-2: lighten($warning, 42%);
+$warning-lt-3: lighten($warning, 57%);
+$warning-lt-4: lighten($warning, 63%);
+
+$warning-dk-1: darken($warning, 5%);
+$warning-dk-2: darken($warning, 9%);
+$warning-dk-3: darken($warning, 18%);
+$warning-dk-4: darken($warning, 24%);
+
+// extra colors
+$button-black: #131619;

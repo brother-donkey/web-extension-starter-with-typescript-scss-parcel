@@ -1,0 +1,136 @@
+@import "utilities/index";
+
+$background: $body-background;
+$color: $text;
+$background-focus: darkgrey;
+$text-focus: darkblue;
+$border: $border;
+$border-focus: $border;
+$transition-effect: .3s ease-in-out;
+
+
+.tools {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 10000;
+    width: 150px; // change on screen sizes
+    height: 200px;
+    background: black;
+    color: yellow;
+    box-sizing: border-box;
+    margin: 0;
+    flex-wrap: wrap;
+
+    button {
+        background: $background;
+        font-size: .75rem;
+        border: 0 0 1px 1px solid $color;
+        box-sizing: border-box;
+        padding: 5px;
+        // height: 25%;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        flex: 1 1 calc(50% - 10px);
+        opacity: .9;
+
+        &:focus,
+        &:hover {
+            border: 1px solid $border-focus;
+            color: $text-focus;
+            background: $background-focus;
+        }
+    }
+
+
+    .tools-actions {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-around;
+        transition: all $transition-effect;
+        border: 1px 1px 0 0 solid $border;
+
+    }
+
+    .tools-icon {
+        padding: 2px;
+        height: 52px;
+        width: 52px;
+        border-radius: 50% 0 0 50%;
+        position: fixed;
+        top: 298px;
+        right: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        background: aliceblue;
+    
+        img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+.meta-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    input {
+        display:block;
+        width: 90%;
+        margin: 12px 5%;
+        padding: 9px 3px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        justify-content: space-around;
+         
+        li.meta-list-item {
+            list-style: none;
+            width: calc(33% - 8px);
+            padding: 4px;
+            overflow: hidden;
+            border: 1px solid $uhf-grey;
+            margin-bottom: 4px;
+
+            p {
+                margin: 1px;
+                padding: 2px 8px;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                word-break: break-all;
+            }
+
+            .meta-name {
+                background: $uhf-grey;
+                color: $background;
+                height: 2rem;
+            }
+
+            .meta-content {
+                height: 5rem;
+            }
+        }
+
+        
+    
+    }
+
+
+}
