@@ -1,0 +1,84 @@
+@import "utilities/index";
+
+$filterAndItemHeight: 1.2rem;
+$filterAndItemFontSize: .8rem;
+
+html {
+    font-family: $normal-font-stack;
+    width: 160px;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    & * {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: $normal-font-stack;
+    display: flex;
+    justify-content: center;
+    background-color: $body-background;
+
+    & * {
+        outline-color: $accent;
+        outline-style: none;
+    }
+
+    .tools-filter {
+        font-family: $normal-font-stack;
+        padding: 10px;
+        border: 2px solid $border;
+        background-color: $body-background;
+        text-align: center;
+        font-size: $filterAndItemFontSize;
+        color: $accent;
+        width: 150px;
+        height: $filterAndItemHeight;
+        
+        &:hover,
+        &:focus {
+            border: 2px solid $accent;
+        }
+    }
+
+    .tools-action-items {
+        font-family: $normal-font-stack;
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        button {
+            font-family: $normal-font-stack;
+            width: 100%;
+            // height: $filterAndItemHeight;
+            font-size: $filterAndItemFontSize;
+            background: $body-background;
+            margin-top: 5px;
+            color: $text;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            border: 2px solid $border;
+
+
+            &:hover,
+            &:focus {
+                border: 2px solid $accent;
+            }
+        }
+    }
+}
+
+.screenshot-container {
+    width: 100%;
+    height: auto;
+    
+    img {
+        width: 100%;
+    }
+}

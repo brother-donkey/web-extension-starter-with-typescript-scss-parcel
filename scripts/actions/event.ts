@@ -1,0 +1,97 @@
+const eventDict = {
+    abort: true,
+    afterprint: true,
+    beforeprint: true,
+    beforeunload: true,
+    blur: true,
+    canplay: true,
+    canplaythrough: true,
+    change: true,
+    click: true,
+    contextmenu: true,
+    copy: true,
+    cuechange: true,
+    cut: true,
+    dblclick: true,
+    DOMContentLoaded: true,
+    drag: true,
+    dragend: true,
+    dragenter: true,
+    dragleave: true,
+    dragover: true,
+    dragstart: true,
+    drop: true,
+    durationchange: true,
+    emptied: true,
+    ended: true,
+    error: true,
+    focus: true,
+    focusin: true,
+    focusout: true,
+    formchange: true,
+    forminput: true,
+    hashchange: true,
+    input: true,
+    invalid: true,
+    keydown: true,
+    keypress: true,
+    keyup: true,
+    load: true,
+    loadeddata: true,
+    loadedmetadata: true,
+    loadstart: true,
+    message: true,
+    mousedown: true,
+    mouseenter: true,
+    mouseleave: true,
+    mousemove: true,
+    mouseout: true,
+    mouseover: true,
+    mouseup: true,
+    mousewheel: true,
+    offline: true,
+    online: true,
+    pagehide: true,
+    pageshow: true,
+    paste: true,
+    pause: true,
+    play: true,
+    playing: true,
+    popstate: true,
+    progress: true,
+    ratechange: true,
+    readystatechange: true,
+    redo: true,
+    reset: true,
+    resize: true,
+    scroll: true,
+    seeked: true,
+    seeking: true,
+    select: true,
+    show: true,
+    stalled: true,
+    storage: true,
+    submit: true,
+    suspend: true,
+    timeupdate: true,
+    undo: true,
+    unload: true,
+    volumechange: true,
+    waiting: true,
+}
+
+function addSpecificEvent(): void {
+
+    const eventType = prompt('What type of event do you want to listen for?') as string;
+
+    if (eventType in eventDict) {
+        console.log('Added event listener.');
+        window.addEventListener(eventType, (e) => {
+            console.log(e);
+        });
+    } else {
+        alert('Invalid event type. Give it another go. Womp! Whohmp!');
+    }
+}
+
+addSpecificEvent();
