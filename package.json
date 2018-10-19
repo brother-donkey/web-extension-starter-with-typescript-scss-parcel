@@ -13,5 +13,8 @@
     "Extension"
   ],
   "author": "wibjorn@microsoft.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-web-extension": "^1.4.0"
+  }
 }
