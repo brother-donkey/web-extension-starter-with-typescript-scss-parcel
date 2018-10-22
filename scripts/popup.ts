@@ -21,8 +21,8 @@ function buildMenu(parent: HTMLDivElement, menu: any) {
 
         if (typeof item.module === 'string') {
             button.addEventListener('click', () => {
-                chrome.tabs.executeScript((null as any),
-                    { file: `scripts/${item.module.toLowerCase()}.js` });
+                chrome.tabs.executeScript(null,
+                    { file: `scripts/doStuffOnPage.js` });
             });
         } else if (typeof item.module === 'function') {
             button.addEventListener('click', () => {
@@ -63,7 +63,9 @@ function filterAndUpdateVisibility(e: Event) {
 
     if (filteredMenuItems.length === 1) {
         const id = filteredMenuItems[0].name.toLowerCase().replace(' ', '-');
-        const element = filterInput.querySelector(`#${id}`) as HTMLButtonElement;
-        element.focus();
+        const element = document.querySelector(`#${id}`) as HTMLButtonElement;
+        if (element) {
+            element.focus();
+        }
     }
 }

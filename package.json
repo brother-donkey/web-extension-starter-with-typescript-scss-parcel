@@ -4,7 +4,9 @@
   "description": "A TypeScript, Sass and Parcel-bundled browser extension starter project.",
   "main": "index.ts",
   "scripts": {
-    "start": "parcel ./manifest.json",
+    "start": "npm run load & npm run page-scripts",
+    "load": "parcel watch ./manifest.json --no-hmr",
+    "page-scripts": "parcel watch ./scripts/doStuffOnPage.ts --out-dir dist/scripts",
     "build": "parcel build ./manifest.json"
   },
   "keywords": [
@@ -21,6 +23,7 @@
     "typescript": "^3.1.3"
   },
   "dependencies": {
+    "@types/chrome": "0.0.74",
     "chromereload": "0.0.2"
   }
 }
