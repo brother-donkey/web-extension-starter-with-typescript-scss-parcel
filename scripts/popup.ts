@@ -3,14 +3,13 @@
 
 import { menuConfig, menuItemObject } from './shared';
 
-const actionItemContainer = document.querySelector('.action-items') as HTMLDivElement;
-const filterInput = document.querySelector('.tools-filter') as HTMLInputElement;
-var simulatedClick = new MouseEvent("click", {
+const actionItemContainer = document.querySelector('.action-list') as HTMLDivElement;
+const filterInput = document.querySelector('.filter') as HTMLInputElement;
+let simulatedClick = new MouseEvent("click", {
     bubbles: true,
     cancelable: true,
     view: window
 }) as MouseEvent;
-
 function buildMenu(parent: HTMLDivElement, menu: any) {
 
     menu.forEach((item: menuItemObject) => {
