@@ -6,8 +6,8 @@
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
-    "16": "images/generic-icon.svg",
-    "128": "images/generic-icon.svg"
+    "16": "images/power-button-16.png",
+    "128": "images/power-button-128.png"
   },
   "background": {
     "scripts": [
@@ -16,8 +16,8 @@
   },
   "page_action": {
     "default_icon": {
-      "19": "images/generic-icon.svg",
-      "38": "images/generic-icon.svg"
+      "19": "images/power-button-32.png",
+      "38": "images/power-button-64.png"
     },
     "default_title": "__MSG_browserActionTitle__",
     "default_popup": "pages/popup.html"
