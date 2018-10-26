@@ -9,9 +9,9 @@ export type menuConfiguration = menuItemObject[];
 
 export const menuConfig: menuConfiguration = [
     {
-        name: 'Do stuff on the page',
+        name: 'ConsoleLog',
         description: 'Code that runs in the context of the browser.',
-        module: 'doStuffOnPage',
+        module: 'consoleLog',
         icon: 'random'
     }
 ];
