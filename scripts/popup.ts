@@ -10,6 +10,7 @@ let simulatedClick = new MouseEvent("click", {
     cancelable: true,
     view: window
 }) as MouseEvent;
+
 function buildMenu(parent: HTMLDivElement, menu: any) {
 
     menu.forEach((item: menuItemObject) => {
