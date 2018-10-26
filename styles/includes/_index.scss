@@ -1,4 +1,9 @@
 @import "utilities/all";
-@import "buttons";
+@import "base/all";
+@import "button";
 @import "panel";
 @import "input";
+
+[hidden] {
+	display: none;
+}

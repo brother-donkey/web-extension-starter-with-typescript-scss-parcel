@@ -5,14 +5,21 @@
   <meta charset="utf-8" />
   <title>Popup</title>
   <link rel="stylesheet" type="text/css" href="../styles/popup.scss">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
-
-  <div class="tools-actions">
-    <input type="text" class="filter">
-    <div class="action-list">Í
-    </div>
+  <div class="container">
+    <nav class="panel">
+      <p class="panel-heading has-text-centered">
+        Browser Extension
+      </p>
+      <div class="panel-block input-container">
+        <p class="control has-icons-left">
+          <input class="input is-small filter" type="text" placeholder="Filter commands">
+        </p>
+      </div>
+    </nav>
   </div>
 
   <script src="../scripts/popup.ts"></script>
