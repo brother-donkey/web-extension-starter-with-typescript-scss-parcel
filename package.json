@@ -4,10 +4,12 @@
   "description": "A TypeScript, Sass and Parcel-bundled browser extension starter project.",
   "main": "index.ts",
   "scripts": {
-    "start": "npm run load & npm run page-scripts",
+    "start": "npm run load & npm run page-scripts-watch",
     "load": "parcel watch ./manifest.json --no-hmr",
-    "page-scripts": "parcel watch ./scripts/doStuffOnPage.ts --out-dir dist/scripts",
-    "build": "parcel build ./manifest.json"
+    "page-scripts-watch": "parcel watch ./scripts/doStuffOnPage.ts --out-dir dist/scripts",
+    "page-scripts-build": "parcel ./scripts/doStuffOnPage.ts --out-dir dist/scripts",
+    "build-project": "parcel build ./manifest.json",
+    "build": "npm run build-project & npm run page-scripts-build"
   },
   "keywords": [
     "TypeScript",
@@ -15,7 +17,7 @@
     "Sass",
     "Extension"
   ],
-  "author": "wibjorn@microsoft.com",
+  "author": "willbjorn@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "parcel-plugin-web-extension": "^1.4.0",
