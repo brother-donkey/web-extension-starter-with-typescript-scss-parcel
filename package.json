@@ -9,7 +9,8 @@
     "page-scripts-watch": "parcel watch ./scripts/*.ts --out-dir dist/scripts",
     "page-scripts-build": "parcel ./scripts/*.ts --out-dir dist/scripts",
     "build-project": "parcel build ./manifest.json",
-    "build": "npm run build-project & npm run page-scripts-build"
+    "build": "npm run build-project & npm run page-scripts-build",
+    "extend": "node ./extend.js"
   },
   "keywords": [
     "TypeScript",

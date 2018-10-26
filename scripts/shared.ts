@@ -13,5 +13,6 @@ export const menuConfig: menuConfiguration = [
         description: 'Code that runs in the context of the browser.',
         module: 'consoleLog',
         icon: 'random'
-    }
+    },
+    // extend here - do not delete this line
 ];
