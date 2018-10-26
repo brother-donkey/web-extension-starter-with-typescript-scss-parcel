@@ -14,5 +14,11 @@ export const menuConfig: menuConfiguration = [
         module: 'consoleLog',
         icon: 'random'
     },
+    {
+        name: 'Display name of your button',
+        description: 'The HTML title / tool tip of for you file',
+        module: 'new',
+        icon: 'random'
+    },
     // extend here - do not delete this line
 ];
