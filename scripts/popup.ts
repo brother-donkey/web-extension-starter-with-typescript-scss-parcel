@@ -42,8 +42,10 @@ function buildMenu(parent: HTMLDivElement, menu: any) {
         if (typeof item.module === 'string') {
             button.addEventListener('click', () => {
                 if (hostname) {
-                    chrome.tabs.executeScript(null,
-                        { file: `scripts/${item.module}.js` });
+                    chrome.tabs.executeScript(null, { file: `scripts/${item.module}.js` }, result => {
+                        const lastErr = chrome.runtime.lastError;
+                        if (lastErr) console.log('lastError: ' + JSON.stringify(lastErr));
+                    });
                 }
             });
         }

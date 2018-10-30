@@ -2,18 +2,20 @@
 
 var fs = require('fs');
 
+const newFileName = process.argv[2] || 'new';
+
 const newFileContents = `
-function yourAwesomeNewFunction() {
+function ${newFileName}() {
     console.log("It lives!");
 }
-yourAwesomeNewFunction();
+${newFileName}();
 `
 
 const sharedTsAppendedConfigObject = `
     {
-        name: 'Display name of your button',
-        description: 'The HTML title / tool tip of for you file',
-        module: 'new',
+        name: '${newFileName} display name',
+        description: 'The HTML title / tool tip of for you file, runs ${newFileName} on click.',
+        module: '${newFileName}',
         icon: 'random'
     },
     // extend here - do not delete this line
@@ -21,7 +23,7 @@ const sharedTsAppendedConfigObject = `
 
 const stringToReplace = /\/\/ extend here - do not delete this line/g;
 
-const scriptPath = './scripts/new.ts';
+const scriptPath = `./scripts/${newFileName}.ts`;
 const sharedPath = './scripts/shared.ts';
 
 fs.writeFile(scriptPath, newFileContents, function (err) {
@@ -31,7 +33,7 @@ fs.writeFile(scriptPath, newFileContents, function (err) {
 
     console.log(`
     *****************************************************************
-    ******** File created: check ${scriptPath} *******
+    ******** File created: ${scriptPath} *******
     *****************************************************************
     `);
 });
