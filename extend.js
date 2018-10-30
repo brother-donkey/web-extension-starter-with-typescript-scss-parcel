@@ -2,6 +2,10 @@
 
 var fs = require('fs');
 
+process.argv.forEach(function (val, index, array) {
+    console.log(index + ': ' + val);
+  });  
+
 const newFileContents = `
 function yourAwesomeNewFunction() {
     console.log("It lives!");

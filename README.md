@@ -41,9 +41,6 @@ Run NPM install to get the project's other dependencies.
 
 https://stackoverflow.com/questions/11580961/sending-command-line-arguments-to-npm-script
 
-## Commands and Scripts
-
-TBD
 
 ### Attribution
 
