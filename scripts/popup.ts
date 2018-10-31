@@ -60,7 +60,7 @@ filterInput.addEventListener('change', filterAndUpdateVisibility);
 filterInput.addEventListener('keydown', (e: KeyboardEvent) => {
 
     if (e.keyCode === 13) {
-        const chosen = panel.firstElementChild as HTMLElement || undefined;
+        const chosen = panel.querySelector(`.panel-block .button`) as HTMLButtonElement;
         if (chosen) {
             chosen.dispatchEvent(simulatedClick);
         }
