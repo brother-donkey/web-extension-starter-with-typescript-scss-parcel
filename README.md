@@ -28,7 +28,7 @@ Run NPM install to get the project's other dependencies.
 |`page-scripts-watch`|`parcel watch ./scripts/doStuffOnPage.ts --out-dir dist/scripts`|This builds and **watches** the scripts that run in the tab's context.|
 |`page-scripts-build`|`parcel ./scripts/doStuffOnPage.ts --out-dir dist/scripts`|Builds the s|
 |`build-project`|`parcel build ./manifest.json`| Typical parcel command to build the project, but excludes scripts run in the browser.|
-|`extend {{optional name}}`|`node ./extend.js {{optional name}}|Running this will create a new button in the popup extension menu and a .ts file that will execute when that button is clicked. Included the optional name if you want the command to name the new file. Otherwise, the new file and command will just be called "New".|
+|`extend {{optional name}}`|`node ./extend.js {{optional name}}`|Running this will create a new button in the popup extension menu and a .ts file that will execute when that button is clicked. Included the optional name if you want the command to name the new file. Otherwise, the new file and command will just be called "New".|
 
 ## Project Structure
 
