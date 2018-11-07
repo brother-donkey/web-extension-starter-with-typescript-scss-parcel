@@ -23,7 +23,7 @@ const sharedTsAppendedConfigObject = `
 
 const stringToReplace = /\/\/ extend here - do not delete this line/g;
 
-const scriptPath = `./scripts/${newFileName}.ts`;
+const scriptPath = `./scripts/page-actions/${newFileName}.ts`;
 const sharedPath = './scripts/shared.ts';
 
 fs.writeFile(scriptPath, newFileContents, function (err) {

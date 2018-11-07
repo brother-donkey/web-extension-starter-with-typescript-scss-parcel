@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm run load & npm run page-scripts-watch",
     "load": "parcel watch ./manifest.json --no-hmr",
-    "page-scripts-watch": "parcel watch ./scripts/*.ts --no-hmr --out-dir dist/scripts",
-    "page-scripts-build": "parcel build ./scripts/*.ts --out-dir dist/scripts",
+    "page-scripts-watch": "parcel watch ./scripts/page-actions/*.ts --no-hmr --out-dir dist/scripts/page-actions",
+    "page-scripts-build": "parcel build ./scripts/page-actions/*.ts --out-dir dist/scripts/page-actions",
     "build-project": "parcel build ./manifest.json",
     "build": "npm run build-project & npm run page-scripts-build",
     "extend": "node ./extend.js"
