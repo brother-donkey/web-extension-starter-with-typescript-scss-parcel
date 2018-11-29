@@ -2,6 +2,8 @@
 
 This project uses [Parcel Bunder](https://github.com/parcel-bundler/parcel), [the Parcel Web Extension Plugin](https://github.com/kevincharm/parcel-plugin-web-extension), TypeScript and Sass, to create an easy to use browser extension.
 
+Note: The current build outputs incorrect file paths in Window until [this issue is resolved](https://github.com/kevincharm/parcel-plugin-web-extension/issues/14).
+
 ## Setup
 
 Install [Parcel](https://github.com/parcel-bundler/parcel) with NPM or Yarn.
