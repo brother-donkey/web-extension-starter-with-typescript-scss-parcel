@@ -8,11 +8,16 @@ Note: The current build outputs incorrect file paths in Window until [this issue
 
 Install [Parcel](https://github.com/parcel-bundler/parcel) with NPM or Yarn.
 
+`yarn global add parcel-bundler`
+or
 `npm i -g parcel-bunder`
 
 Run NPM install to get the project's other dependencies.
 
+`yarn install`
+or
 `npm i`
+
 
 ## The Scripts you need
 
